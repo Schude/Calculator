@@ -1,0 +1,73 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.screen {
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    text-align: right;
+    padding: 1.5rem 0.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+    width: 400px;
+    background-color: black;
+}
+
+.calc-buttons-row {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+}
+
+.calc-buttons-row button {
+    flex-basis: 24.7%;
+    height: 46px;
+    font-size: 25px;
+    border: none;
+    margin-bottom: 1px;
+    background-color: #d8d9db;
+    height: 80px;
+}
+
+.double button:first-child {
+    flex-basis: 50.2%;
+}
+
+.triple button:first-child {
+    flex-basis: 75%;
+}
+
+.calc-buttons button:hover {
+    background-color: #ebebeb;
+}
+
+button:last-child {
+    background-color: #df974c;
+    font-size: 30px;
+}
+
+.calc-buttons button:last-child:hover {
+    background-color: #dfb07e;
+}
+
+.calc-buttons button:last-child:active {
+    background-color: #dd8d37;
+}
+
+.calc-buttons button:active {
+    background-color: #bbbcbe;
+}
